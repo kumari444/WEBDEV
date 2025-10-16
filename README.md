@@ -1,16 +1,36 @@
-# React + Vite
+# Bible Verse App with CRUD Notes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive React + Node.js application that fetches Bible verses from a public API and allows users to create, read, update, and delete personal notes related to the verses. This project demonstrates full CRUD functionality, integration with an external API, and a clean, user-friendly interface with color theming.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **Get a Random Bible Verse**: Fetches a random verse from the Bible using the Bible Labs API.
+- **Get a Specific Verse**: Retrieve a specific verse by entering the book, chapter, and verse.
+- **Manage Notes**: Add, edit, and delete notes linked to Bible verses.
+- **Responsive and Polished UI**: Simple design with pleasant color theming for headings, buttons, and background.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React, Vite, CSS variables for theming
+- **Backend**: Node.js, Express
+- **API**: [Bible Labs API](https://labs.bible.org/api_web_service)
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher recommended)
+- Git
+
+### Installation
+
+1. Clone the repository
+
+   ```bash
+   git clone https://github.com/kumari444/WEBDEV.git
