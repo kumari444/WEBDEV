@@ -1,22 +1,39 @@
-/* Center content and add spacing */
+:root {
+  --color-bg: #d0e8f2;
+  --color-heading: #ff0000;
+  --color-button: #ff4500;
+  --color-button-hover: #ff6f61;
+  --color-white: #fff;
+  --color-text: #333;
+  --color-border: #ccc;
+}
+
+/* Main container */
 .app-container {
   max-width: 600px;
   margin: 50px auto;
-  padding: 20px;
+  padding: 30px;
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: var(--color-bg);
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  color: var(--color-text);
 }
 
-/* Style buttons */
+/* Headings */
+h1, h2, h3 {
+  color: var(--color-heading);
+  margin-bottom: 20px;
+}
+
+/* Buttons */
 button {
-  background-color: #4CAF50; /* Green */
+  background-color: var(--color-button);
   border: none;
-  color: white;
+  color: var(--color-white);
   padding: 10px 20px;
-  margin-top: 15px;
+  margin: 10px 5px;
   cursor: pointer;
   font-size: 16px;
   border-radius: 4px;
@@ -24,16 +41,25 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: var(--color-button-hover);
 }
 
-/* Style input field */
-input {
+/* Input fields */
+input, textarea {
   padding: 10px;
   font-size: 16px;
   width: 70%;
   margin-top: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-border);
   border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.2s ease;
 }
 
+input:focus, textarea:focus {
+  border-color: var(--color-button);
+  box-shadow: 0 0 5px rgba(108, 92, 231, 0.4);
+  outline: none;
+}
+body {
+  background-color: pink !important;
+}
